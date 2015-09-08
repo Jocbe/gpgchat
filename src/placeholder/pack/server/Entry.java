@@ -16,6 +16,7 @@ public class Entry {
     private static final Logger logger = LogManager.getLogger(Entry.class);
     
     public static void main(String[] args) {
-        logger.trace("test");
+        CoreServer cs = new CoreServer(9901, null, null);
+        cs.start();
     }
 }
